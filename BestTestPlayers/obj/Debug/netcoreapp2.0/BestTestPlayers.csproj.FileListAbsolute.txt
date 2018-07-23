@@ -1,0 +1,11 @@
+/Users/bishalrana/Projects/BestTestPlayers/BestTestPlayers/bin/Debug/netcoreapp2.0/BestTestPlayers.deps.json
+/Users/bishalrana/Projects/BestTestPlayers/BestTestPlayers/bin/Debug/netcoreapp2.0/BestTestPlayers.runtimeconfig.json
+/Users/bishalrana/Projects/BestTestPlayers/BestTestPlayers/bin/Debug/netcoreapp2.0/BestTestPlayers.runtimeconfig.dev.json
+/Users/bishalrana/Projects/BestTestPlayers/BestTestPlayers/bin/Debug/netcoreapp2.0/BestTestPlayers.dll
+/Users/bishalrana/Projects/BestTestPlayers/BestTestPlayers/bin/Debug/netcoreapp2.0/BestTestPlayers.pdb
+/Users/bishalrana/Projects/BestTestPlayers/BestTestPlayers/obj/Debug/netcoreapp2.0/BestTestPlayers.csproj.CoreCompileInputs.cache
+/Users/bishalrana/Projects/BestTestPlayers/BestTestPlayers/obj/Debug/netcoreapp2.0/BestTestPlayers.AssemblyInfoInputs.cache
+/Users/bishalrana/Projects/BestTestPlayers/BestTestPlayers/obj/Debug/netcoreapp2.0/BestTestPlayers.AssemblyInfo.cs
+/Users/bishalrana/Projects/BestTestPlayers/BestTestPlayers/obj/Debug/netcoreapp2.0/BestTestPlayers.dll
+/Users/bishalrana/Projects/BestTestPlayers/BestTestPlayers/obj/Debug/netcoreapp2.0/BestTestPlayers.pdb
+/Users/bishalrana/Projects/BestTestPlayers/BestTestPlayers/obj/Debug/netcoreapp2.0/BestTestPlayers.csprojResolveAssemblyReference.cache

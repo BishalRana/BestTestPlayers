@@ -1,0 +1,48 @@
+﻿@model BestTestPlayers.Models.Player;
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="row">
+    <div class="page-header">
+        <h2>Player Information</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-11">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DOB)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DOB)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Country)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Country)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Average)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Average)
+            </dd>
+        </dl>
+    </div>      
+</div>
+    <div class="row" style="padding-top:20px;">
+        <div class="col-sm-offset-1 col-sm-11" style="padding-top:10px;">
+            @Html.ActionLink("Edit Record", "Edit", new { id = Model.Id }) |
+            @Html.ActionLink("Back to list", "Index")
+        </div>
+    </div>
+

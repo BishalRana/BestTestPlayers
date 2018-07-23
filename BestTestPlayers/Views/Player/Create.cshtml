@@ -1,0 +1,84 @@
+﻿@model BestTestPlayers.Models.Player;
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="row">
+    <div class="page-header">
+        <h2>Player</h2>
+    </div>
+</div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+<div class=" row form-horizontal">
+    <br />
+    @Html.ValidationSummary(true,"",new { @class = "text-danger"})
+    <div class=form-group>
+        @Html.LabelFor(m =>m.Name ,htmlAttributes: new { @class = "control-label col-md-2"})
+        <div class="col-md-6 .col-md-offset-4">
+            @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "form-control"} })
+            @Html.ValidationMessageFor(model => model.Name,"",new { @class = "text-danger"})
+        </div>
+    </div>
+
+    <div class=form-group>
+        @Html.LabelFor(m => m.DOB,htmlAttributes: new { @class = "control-label col-md-2"})
+        <div class="col-md-6 .col-md-offset-4">
+            @Html.EditorFor(m => m.DOB, new { htmlAttributes = new { @class = "form-control"} })
+            @Html.ValidationMessageFor(model => model.DOB,"",new { @class = "text-danger"})
+        </div>
+    </div>
+    <div class=form-group>
+        @Html.LabelFor(m => m.Country,htmlAttributes: new { @class = "control-label col-md-2"})
+        <div class="col-md-6 .col-md-offset-4">
+            @Html.EditorFor(m => m.Country, new { htmlAttributes = new { @class = "form-control"} })
+            @Html.ValidationMessageFor(model => model.Country,"",new { @class = "text-danger"})
+        </div>
+    </div>
+    <div class=form-group>
+        @Html.LabelFor(m => m.HighestScore,htmlAttributes: new { @class = "control-label col-md-2"})
+        <div class="col-md-6 .col-md-offset-4">
+            @Html.EditorFor(m => m.HighestScore, new { htmlAttributes = new { @class = "form-control"} })
+            @Html.ValidationMessageFor(model => model.HighestScore,"",new { @class = "text-danger"})
+        </div>
+    </div>
+    <div class=form-group>
+        @Html.LabelFor(m => m.Type,htmlAttributes: new { @class = "control-label col-md-2"})
+        <div class="col-md-6 .col-md-offset-4">
+            @Html.EditorFor(m => m.Type, new { htmlAttributes = new { @class = "form-control"} })
+            @Html.ValidationMessageFor(model => model.Type,"",new { @class = "text-danger"})
+        </div>
+    </div>
+
+    <div class=form-group>
+        @Html.LabelFor(m => m.Matches,htmlAttributes: new { @class = "control-label col-md-2"})
+        <div class="col-md-6 .col-md-offset-4">
+            @Html.EditorFor(m => m.Matches, new { htmlAttributes = new { @class = "form-control"} })
+            @Html.ValidationMessageFor(model => model.Matches,"",new { @class = "text-danger"})
+        </div>
+    </div>
+
+    <div class=form-group>
+        @Html.LabelFor(m => m.Average,htmlAttributes: new { @class = "control-label col-md-2"})
+        <div class="col-md-6 .col-md-offset-4">
+            @Html.EditorFor(m => m.Average, new { htmlAttributes = new { @class = "form-control"} })
+            @Html.ValidationMessageFor(model => model.Average,"",new { @class = "text-danger"})
+        </div>
+    </div>
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" value="Create" class="btn btn-default" />
+    </div>
+</div>
+}
+<div class="row" style="padding-top:20px;">
+    <div class="col-md-offset-2 col-md-10 bg-light ">
+        @Html.ActionLink("Back to list", "Index")
+    </div>
+
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
